@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BasketBall Game!</string>
+    <string name="teamNameA">Team A</string>
+    <string name="teamNameB">Team B</string>
+    <string name="score">0</string>
+    <string name="scoreB">0</string>
+    <string name="plus3">+3 Points</string>
+    <string name="plus2">+2 Points</string>
+    <string name="plus1">Free Throw</string>
+    <string name="resetScore">Reset</string>
+</resources>
