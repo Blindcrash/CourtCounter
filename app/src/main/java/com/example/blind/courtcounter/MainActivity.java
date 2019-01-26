@@ -2,13 +2,11 @@ package com.example.blind.courtcounter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    // Variables de los puntos de cada Equipo
     int scoreTeamA = 0;
     int scoreTeamB = 0;
 
@@ -19,69 +17,57 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * Increase the score for Team A by 1 point.
-     */
+    // Incrementa los puntos del equipo A por 1
     public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
 
-    /**
-     * Increase the score for Team A by 2 points.
-     */
+    // Incrementa los puntos del equipo A por 2
     public void addTwoForTeamA(View v) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
 
-    /**
-     * Increase the score for Team A by 3 points.
-     */
+    // Incrementa los puntos del equipo A por 3
     public void addThreeForTeamA(View v) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
-    /**
-     * Displays the given score for Team A.
-     */
+    // Muestra el puntaje sumado de el equipo A
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    /**
-     * Increase the score for Team B by 1 point.
-     */
+
+    // Incrementa los puntos del equipo B por 1
     public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
-    /**
-     * Increase the score for Team B by 2 points.
-     */
+
+    // Incrementa los puntos del equipo B por 2
     public void addTwoForTeamB(View v) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
 
-    /**
-     * Increase the score for Team B by 3 points.
-     */
+    // Incrementa los puntos del equipo B por 3
     public void addThreeForTeamB(View v) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
-    /**
-     * Displays the given score for Team B.
-     */
+    // Muestra el puntaje sumado de el equipo A
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    // Reinicia los valores de ambos equipos para empezar otro conteo de puntos
 
     public void resetScoreBothTeams (View v) {
         scoreTeamA =0;
